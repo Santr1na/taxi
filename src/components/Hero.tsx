@@ -35,8 +35,8 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-4xl font-bold leading-[1.1] tracking-tight md:text-5xl lg:text-[3.25rem]"
             >
-              Оценка стоимости поездок{" "}
-              <span className="gradient-text">в одном приложении</span>
+              Платформа для расчёта стоимости поездок{" "}
+              <span className="gradient-text">и маршрутной аналитики</span>
             </motion.h1>
 
             <motion.p
@@ -45,8 +45,9 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="mt-6 max-w-xl text-lg leading-relaxed text-muted md:text-xl"
             >
-              Мобильный сервис для оценки стоимости поездок, анализа маршрутов
-              и получения дополнительной информации о поездках.
+              FareLook — сервис для транспортных компаний и команд, которым
+              нужен расчёт ориентировочной стоимости, анализ маршрутов и
+              структурированные данные о параметрах поездки.
             </motion.p>
 
             <motion.div

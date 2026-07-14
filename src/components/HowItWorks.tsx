@@ -4,38 +4,38 @@ import { motion } from "framer-motion";
 import {
   Calculator,
   ChevronDown,
+  Database,
   LayoutDashboard,
-  Map,
   Settings2,
 } from "lucide-react";
 import { AnimatedSection } from "./ui/AnimatedSection";
 
 const steps = [
   {
-    icon: Map,
-    title: "Выбор маршрута",
-    description: "Пользователь указывает точки отправления и назначения",
+    icon: Database,
+    title: "Получение данных маршрута",
+    description: "Загрузка исходных маршрутных данных для последующей обработки",
     color: "text-accent-lighter",
     bg: "bg-accent/15",
   },
   {
     icon: Settings2,
-    title: "Получение параметров маршрута",
-    description: "Система определяет расстояние, время и тарифные условия",
+    title: "Анализ параметров маршрута",
+    description: "Определение расстояния, длительности и связанных маршрутных характеристик",
     color: "text-info",
     bg: "bg-info/15",
   },
   {
     icon: Calculator,
-    title: "Расчёт ориентировочной стоимости",
-    description: "Формируется предварительная оценка стоимости поездки",
+    title: "Расчёт стоимости",
+    description: "Вычисление ориентировочной стоимости на основе полученных параметров",
     color: "text-success",
     bg: "bg-success/15",
   },
   {
     icon: LayoutDashboard,
     title: "Отображение результата",
-    description: "Результат расчёта показывается в удобном мобильном интерфейсе",
+    description: "Представление итогов расчёта и сопутствующих данных в интерфейсе",
     color: "text-accent-lighter",
     bg: "bg-accent/15",
   },
@@ -55,7 +55,7 @@ export function HowItWorks() {
             Как работает
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted">
-            Последовательность расчёта от выбора маршрута до отображения результата
+            Последовательная обработка маршрутных данных — от получения до отображения результата
           </p>
         </div>
 

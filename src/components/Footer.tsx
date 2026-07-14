@@ -18,9 +18,10 @@ export function Footer() {
               </div>
               <span className="font-semibold">FareLook</span>
             </div>
-            <p className="mt-3 max-w-xs text-sm leading-relaxed text-muted">
-              Мобильный сервис для оценки стоимости поездок и анализа маршрутов.
-              Продукт на стадии MVP.
+            <p className="mt-3 max-w-sm text-sm leading-relaxed text-muted">
+              FareLook — технологический проект по разработке решений для
+              оценки стоимости поездок, анализа маршрутов и транспортной
+              аналитики.
             </p>
           </div>
 

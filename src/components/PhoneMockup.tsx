@@ -50,7 +50,7 @@ export function PhoneMockup() {
                 <div className="mt-2 text-3xl font-bold tracking-tight">
                   847 ₽
                 </div>
-                <div className="mt-0.5 text-xs text-muted">по выбранному маршруту</div>
+                <div className="mt-0.5 text-xs text-muted">расчёт по маршруту</div>
               </div>
 
               <div className="mx-4 space-y-3 rounded-2xl glass p-4">

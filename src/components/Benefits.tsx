@@ -1,6 +1,6 @@
 "use client";
 
-import { BarChart3, MapPinned, Route, Shield } from "lucide-react";
+import { BarChart3, MapPinned, Route, Smartphone } from "lucide-react";
 import {
   AnimatedSection,
   StaggerContainer,
@@ -12,31 +12,31 @@ const benefits = [
     icon: Route,
     title: "Расчёт стоимости",
     description:
-      "Ориентировочная цена поездки формируется на основе выбранного маршрута и его параметров.",
+      "Формирование ориентировочной стоимости на основе маршрутных данных, тарифных параметров и условий расчёта.",
     accent: "from-accent/20 to-accent-light/5",
     iconColor: "text-accent-lighter",
   },
   {
     icon: MapPinned,
-    title: "Анализ маршрута",
+    title: "Анализ маршрутов",
     description:
-      "Отображение точек отправления и назначения, расстояния и расчётного времени в пути.",
+      "Обработка маршрутной информации: координаты, расстояние, длительность и ключевые точки следования.",
     accent: "from-info/20 to-info/5",
     iconColor: "text-info",
   },
   {
     icon: BarChart3,
-    title: "Детали поездки",
+    title: "Параметры поездки",
     description:
-      "Сводная информация о маршруте: тарифный класс, длительность и другие параметры расчёта.",
+      "Структурированное отображение данных расчёта: тарифный класс, время в пути, дистанция и связанные метрики.",
     accent: "from-success/20 to-success/5",
     iconColor: "text-success",
   },
   {
-    icon: Shield,
-    title: "Конфиденциальность",
+    icon: Smartphone,
+    title: "Удобство использования",
     description:
-      "Данные пользователей обрабатываются в рамках продукта и не передаются третьим лицам.",
+      "Мобильный интерфейс для работы с расчётами и маршрутной информацией без лишних шагов.",
     accent: "from-accent-lighter/20 to-accent/5",
     iconColor: "text-accent-lighter",
   },
@@ -51,7 +51,7 @@ export function Benefits() {
             Возможности
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted">
-            Инструменты для оценки поездок и работы с маршрутной информацией
+            Модульный набор инструментов для расчёта стоимости и работы с маршрутными данными
           </p>
         </div>
 
