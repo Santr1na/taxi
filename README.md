@@ -27,6 +27,25 @@ npm run build
 npm start
 ```
 
+## Запуск через PM2
+
+```bash
+npm run build
+npm run pm2:start
+```
+
+Полезные команды:
+
+```bash
+npm run pm2:status   # статус процесса
+npm run pm2:logs     # логи
+npm run pm2:restart  # перезапуск
+npm run pm2:stop     # остановка
+npm run pm2:delete   # удалить из PM2
+```
+
+Сайт будет доступен на [http://localhost:3021](http://localhost:3021).
+
 ## Структура
 
 - `src/app/` — страницы и глобальные стили
