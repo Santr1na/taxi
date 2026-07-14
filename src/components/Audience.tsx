@@ -1,6 +1,6 @@
 "use client";
 
-import { Building2, Car, User } from "lucide-react";
+import { Building2, Car, Truck, Users } from "lucide-react";
 import {
   AnimatedSection,
   StaggerContainer,
@@ -9,22 +9,28 @@ import {
 
 const audiences = [
   {
+    icon: Car,
+    title: "Водители сервисов заказа поездок",
+    description:
+      "Оценка маршрутов и предварительный расчёт стоимости поездки перед выездом.",
+  },
+  {
     icon: Building2,
     title: "Таксопарки",
     description:
-      "Помогайте водителям принимать более выгодные заказы и повышайте эффективность парка.",
+      "Инструмент для анализа маршрутов и планирования загрузки водителей парка.",
   },
   {
-    icon: Car,
-    title: "Частные водители",
+    icon: Users,
+    title: "Корпоративные автопарки",
     description:
-      "Принимайте решения на основе данных — знайте стоимость до того, как нажмёте «Принять».",
+      "Оценка стоимости служебных поездок и контроль маршрутных параметров.",
   },
   {
-    icon: User,
-    title: "Самозанятые",
+    icon: Truck,
+    title: "Логистические компании",
     description:
-      "Оптимизируйте рабочее время и доход, выбирая заказы с понятной ориентировочной ценой.",
+      "Предварительный расчёт стоимости перевозок и анализ маршрутной информации.",
   },
 ];
 
@@ -37,11 +43,12 @@ export function Audience() {
             Для кого
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted">
-            Решение для всех, кто работает с заказами в Яндекс Про
+            Продукт ориентирован на участников рынка пассажирских и логистических
+            перевозок
           </p>
         </div>
 
-        <StaggerContainer className="grid gap-5 md:grid-cols-3">
+        <StaggerContainer className="grid gap-5 sm:grid-cols-2">
           {audiences.map((item) => (
             <StaggerItem key={item.title}>
               <div className="group h-full rounded-2xl border border-white/6 bg-card p-8 transition-all duration-300 hover:border-accent/20 hover:shadow-lg hover:shadow-accent/5">

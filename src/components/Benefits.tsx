@@ -1,6 +1,6 @@
 "use client";
 
-import { Shield, Smartphone, Zap, MapPin } from "lucide-react";
+import { BarChart3, MapPinned, Route, Shield } from "lucide-react";
 import {
   AnimatedSection,
   StaggerContainer,
@@ -9,35 +9,34 @@ import {
 
 const benefits = [
   {
-    icon: Zap,
-    emoji: "⚡",
-    title: "Быстро",
+    icon: Route,
+    title: "Расчёт стоимости",
     description:
-      "Стоимость отображается практически мгновенно после появления заказа.",
+      "Ориентировочная цена поездки формируется на основе выбранного маршрута и его параметров.",
     accent: "from-accent/20 to-accent-light/5",
     iconColor: "text-accent-lighter",
   },
   {
-    icon: MapPin,
-    emoji: "📍",
-    title: "Автоматическое определение маршрута",
-    description: "Определяются точки отправления и назначения.",
+    icon: MapPinned,
+    title: "Анализ маршрута",
+    description:
+      "Отображение точек отправления и назначения, расстояния и расчётного времени в пути.",
     accent: "from-info/20 to-info/5",
     iconColor: "text-info",
   },
   {
-    icon: Smartphone,
-    emoji: "📱",
-    title: "Работает в фоне",
-    description: "Не требует постоянного открытия приложения.",
+    icon: BarChart3,
+    title: "Детали поездки",
+    description:
+      "Сводная информация о маршруте: тарифный класс, длительность и другие параметры расчёта.",
     accent: "from-success/20 to-success/5",
     iconColor: "text-success",
   },
   {
     icon: Shield,
-    emoji: "🔒",
     title: "Конфиденциальность",
-    description: "Данные пользователя не передаются третьим лицам.",
+    description:
+      "Данные пользователей обрабатываются в рамках продукта и не передаются третьим лицам.",
     accent: "from-accent-lighter/20 to-accent/5",
     iconColor: "text-accent-lighter",
   },
@@ -49,10 +48,10 @@ export function Benefits() {
       <div className="mx-auto max-w-6xl px-4 md:px-6">
         <div className="mb-16 text-center">
           <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
-            Преимущества
+            Возможности
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted">
-            Всё необходимое для принятия взвешенного решения по каждому заказу
+            Инструменты для оценки поездок и работы с маршрутной информацией
           </p>
         </div>
 
@@ -65,10 +64,7 @@ export function Benefits() {
                 >
                   <item.icon className={`h-5 w-5 ${item.iconColor}`} />
                 </div>
-                <h3 className="text-lg font-semibold">
-                  <span className="mr-1.5">{item.emoji}</span>
-                  {item.title}
-                </h3>
+                <h3 className="text-lg font-semibold">{item.title}</h3>
                 <p className="mt-3 leading-relaxed text-muted">
                   {item.description}
                 </p>

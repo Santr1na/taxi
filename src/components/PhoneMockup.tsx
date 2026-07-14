@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import {
-  ArrowRight,
   Clock,
   MapPin,
   Navigation,
@@ -44,20 +43,14 @@ export function PhoneMockup() {
                 </div>
               </div>
 
-              <div className="mx-4 mb-3 rounded-2xl border border-success/20 bg-success/5 p-4">
-                <div className="mb-1 flex items-center gap-1.5">
-                  <span className="relative flex h-2 w-2">
-                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-success opacity-75" />
-                    <span className="relative inline-flex h-2 w-2 rounded-full bg-success" />
-                  </span>
-                  <span className="text-[11px] font-medium text-success">
-                    Новый заказ
-                  </span>
+              <div className="mx-4 mb-3 rounded-2xl border border-accent/20 bg-accent/5 p-4">
+                <div className="mb-1 text-[11px] font-medium text-accent-lighter">
+                  Ориентировочная стоимость
                 </div>
-                <div className="mt-3 text-3xl font-bold tracking-tight">
+                <div className="mt-2 text-3xl font-bold tracking-tight">
                   847 ₽
                 </div>
-                <div className="mt-0.5 text-xs text-muted">ориентировочно</div>
+                <div className="mt-0.5 text-xs text-muted">по выбранному маршруту</div>
               </div>
 
               <div className="mx-4 space-y-3 rounded-2xl glass p-4">
@@ -67,7 +60,7 @@ export function PhoneMockup() {
                   </div>
                   <div>
                     <div className="text-[10px] uppercase tracking-wider text-muted">
-                      Подача
+                      Откуда
                     </div>
                     <div className="text-sm font-medium leading-snug">
                       ул. Тверская, 12
@@ -83,7 +76,7 @@ export function PhoneMockup() {
                   </div>
                   <div>
                     <div className="text-[10px] uppercase tracking-wider text-muted">
-                      Назначение
+                      Куда
                     </div>
                     <div className="text-sm font-medium leading-snug">
                       аэропорт Шереметьево, терминал B
@@ -93,23 +86,17 @@ export function PhoneMockup() {
               </div>
 
               <div className="mx-4 mt-3 grid grid-cols-3 gap-2">
-                <StatPill icon={<Wallet className="h-3 w-3" />} label="Тариф" value="Комфорт+" />
+                <StatPill icon={<Wallet className="h-3 w-3" />} label="Класс" value="Комфорт+" />
                 <StatPill icon={<Route className="h-3 w-3" />} label="Расстояние" value="34 км" />
                 <StatPill icon={<Clock className="h-3 w-3" />} label="Время" value="42 мин" />
               </div>
 
-              <div className="mx-4 mt-4 mb-5 flex gap-2">
+              <div className="mx-4 mt-4 mb-5">
                 <button
                   type="button"
-                  className="flex-1 rounded-xl bg-gradient-to-r from-accent to-accent-light py-2.5 text-xs font-semibold text-white"
+                  className="w-full rounded-xl bg-gradient-to-r from-accent to-accent-light py-2.5 text-xs font-semibold text-white"
                 >
-                  Принять
-                </button>
-                <button
-                  type="button"
-                  className="flex-1 rounded-xl border border-white/10 py-2.5 text-xs font-medium text-muted"
-                >
-                  Пропустить
+                  Новый маршрут
                 </button>
               </div>
             </div>

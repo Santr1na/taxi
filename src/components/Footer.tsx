@@ -10,12 +10,18 @@ export function Footer() {
   return (
     <footer className="border-t border-white/6 py-12 md:py-16">
       <div className="mx-auto max-w-6xl px-4 md:px-6">
-        <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
-          <div className="flex items-center gap-2.5">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-accent to-accent-lighter">
-              <Zap className="h-4 w-4 text-white" strokeWidth={2.5} />
+        <div className="flex flex-col items-center justify-between gap-8 md:flex-row md:items-start">
+          <div>
+            <div className="flex items-center gap-2.5">
+              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-accent to-accent-lighter">
+                <Zap className="h-4 w-4 text-white" strokeWidth={2.5} />
+              </div>
+              <span className="font-semibold">FareLook</span>
             </div>
-            <span className="font-semibold">FareLook</span>
+            <p className="mt-3 max-w-xs text-sm leading-relaxed text-muted">
+              Мобильный сервис для оценки стоимости поездок и анализа маршрутов.
+              Продукт на стадии MVP.
+            </p>
           </div>
 
           <nav className="flex flex-wrap justify-center gap-x-8 gap-y-3">

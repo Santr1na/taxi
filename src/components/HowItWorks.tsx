@@ -2,40 +2,40 @@
 
 import { motion } from "framer-motion";
 import {
-  Bell,
   Calculator,
-  ClipboardList,
-  Database,
   ChevronDown,
+  LayoutDashboard,
+  Map,
+  Settings2,
 } from "lucide-react";
 import { AnimatedSection } from "./ui/AnimatedSection";
 
 const steps = [
   {
-    icon: ClipboardList,
-    title: "Новый заказ",
-    description: "Поступает входящий заказ в систему",
+    icon: Map,
+    title: "Выбор маршрута",
+    description: "Пользователь указывает точки отправления и назначения",
     color: "text-accent-lighter",
     bg: "bg-accent/15",
   },
   {
-    icon: Database,
-    title: "Получение данных",
-    description: "Извлекаются параметры маршрута и тарифа",
+    icon: Settings2,
+    title: "Получение параметров маршрута",
+    description: "Система определяет расстояние, время и тарифные условия",
     color: "text-info",
     bg: "bg-info/15",
   },
   {
     icon: Calculator,
-    title: "Расчёт стоимости",
-    description: "Формируется ориентировочная цена поездки",
+    title: "Расчёт ориентировочной стоимости",
+    description: "Формируется предварительная оценка стоимости поездки",
     color: "text-success",
     bg: "bg-success/15",
   },
   {
-    icon: Bell,
-    title: "Мгновенное уведомление",
-    description: "Водитель видит стоимость до принятия",
+    icon: LayoutDashboard,
+    title: "Отображение результата",
+    description: "Результат расчёта показывается в удобном мобильном интерфейсе",
     color: "text-accent-lighter",
     bg: "bg-accent/15",
   },
@@ -55,7 +55,7 @@ export function HowItWorks() {
             Как работает
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted">
-            Простой процесс от заказа до уведомления о стоимости
+            Последовательность расчёта от выбора маршрута до отображения результата
           </p>
         </div>
 
@@ -88,7 +88,10 @@ export function HowItWorks() {
 
         <div className="flex flex-col items-center gap-2 lg:hidden">
           {steps.map((step, index) => (
-            <div key={step.title} className="flex w-full max-w-sm flex-col items-center">
+            <div
+              key={step.title}
+              className="flex w-full max-w-sm flex-col items-center"
+            >
               <motion.div
                 initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}

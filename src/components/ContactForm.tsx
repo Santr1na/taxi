@@ -28,11 +28,11 @@ export function ContactForm() {
           <div className="p-8 md:p-10">
             <div className="mb-8 text-center">
               <h2 className="text-2xl font-bold tracking-tight md:text-3xl">
-                Получите ранний доступ
+                Запросить доступ к MVP
               </h2>
               <p className="mt-3 text-muted">
-                Оставьте заявку — мы свяжемся с вами, когда приложение будет
-                готово к тестированию
+                Оставьте контакты — мы сообщим о запуске тестирования и
+                возможностях подключения к продукту
               </p>
             </div>
 
@@ -45,10 +45,10 @@ export function ContactForm() {
                 <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-success/15">
                   <CheckCircle2 className="h-8 w-8 text-success" />
                 </div>
-                <h3 className="text-lg font-semibold">Заявка отправлена</h3>
+                <h3 className="text-lg font-semibold">Заявка принята</h3>
                 <p className="mt-2 max-w-sm text-sm text-muted">
-                  Спасибо за интерес! Мы свяжемся с вами по указанным
-                  контактным данным.
+                  Спасибо за интерес к FareLook. Мы свяжемся с вами по
+                  указанным контактным данным.
                 </p>
               </motion.div>
             ) : (
@@ -82,7 +82,7 @@ export function ContactForm() {
                     name="email"
                     type="email"
                     required
-                    placeholder="driver@example.com"
+                    placeholder="contact@company.com"
                     className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3.5 text-sm outline-none transition-all placeholder:text-white/25 focus:border-accent/50 focus:ring-2 focus:ring-accent/20"
                   />
                 </div>
@@ -105,7 +105,7 @@ export function ContactForm() {
                 </div>
 
                 <GlowButton type="submit" className="w-full !py-4">
-                  {loading ? "Отправка..." : "Получить ранний доступ"}
+                  {loading ? "Отправка..." : "Отправить заявку"}
                   {!loading && <ArrowRight className="h-4 w-4" />}
                 </GlowButton>
               </form>

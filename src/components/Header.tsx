@@ -6,8 +6,9 @@ import { useState } from "react";
 import { GlowButton } from "./ui/GlowButton";
 
 const navLinks = [
-  { label: "Преимущества", href: "#benefits" },
+  { label: "Возможности", href: "#benefits" },
   { label: "Как работает", href: "#how-it-works" },
+  { label: "О проекте", href: "#about" },
   { label: "Для кого", href: "#audience" },
   { label: "FAQ", href: "#faq" },
 ];
@@ -44,7 +45,7 @@ export function Header() {
 
         <div className="hidden md:block">
           <GlowButton href="#contact" className="!px-5 !py-2.5 !text-sm">
-            Получить доступ
+            Запросить доступ
           </GlowButton>
         </div>
 
@@ -77,7 +78,7 @@ export function Header() {
             ))}
             <div className="mt-2 px-2">
               <GlowButton href="#contact" className="w-full">
-                Получить доступ
+                Запросить доступ
               </GlowButton>
             </div>
           </nav>

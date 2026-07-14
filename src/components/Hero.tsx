@@ -25,7 +25,7 @@ export function Hero() {
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-accent-light" />
               </span>
               <span className="text-xs font-medium text-accent-lighter">
-                Ранний доступ · Android
+                MVP · Android
               </span>
             </motion.div>
 
@@ -35,8 +35,8 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-4xl font-bold leading-[1.1] tracking-tight md:text-5xl lg:text-[3.25rem]"
             >
-              Узнайте стоимость заказа{" "}
-              <span className="gradient-text">ещё до принятия</span>
+              Оценка стоимости поездок{" "}
+              <span className="gradient-text">в одном приложении</span>
             </motion.h1>
 
             <motion.p
@@ -45,9 +45,8 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="mt-6 max-w-xl text-lg leading-relaxed text-muted md:text-xl"
             >
-              Приложение автоматически определяет параметры нового заказа и
-              помогает водителю заранее увидеть ориентировочную стоимость
-              поездки.
+              Мобильный сервис для оценки стоимости поездок, анализа маршрутов
+              и получения дополнительной информации о поездках.
             </motion.p>
 
             <motion.div
@@ -57,12 +56,12 @@ export function Hero() {
               className="mt-10 flex flex-col gap-4 sm:flex-row"
             >
               <GlowButton href="#contact">
-                Получить доступ
+                Запросить доступ
                 <ArrowRight className="h-4 w-4" />
               </GlowButton>
               <GlowButton href="#contact" variant="secondary">
                 <MessageCircle className="h-4 w-4" />
-                Связаться
+                Связаться с нами
               </GlowButton>
             </motion.div>
           </div>
