@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "/taxi";
+
 const nextConfig: NextConfig = {
-  /* config options here */
+  basePath,
+  assetPrefix: basePath,
 };
 
 export default nextConfig;
